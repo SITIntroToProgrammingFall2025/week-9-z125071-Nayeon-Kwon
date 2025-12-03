@@ -17,6 +17,8 @@ int main(void) {
             scanf("%d", &b[i][j]);
         }
     }
+    
+    printf("\n");
 
     printf("The first matrix you entered is\n");
         for(i=0;i<2;i++){
@@ -53,5 +55,3 @@ int main(void) {
 
     return 0;
 }
-
-
