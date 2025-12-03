@@ -13,8 +13,8 @@ int main(){
 
   for(i=0; i<3; i++){
     x = a[i];
-    y = x/16
-    z = x%16
+    y = x/16;
+    z = x%16;
 
     if(x<10){
       printf("%d", y);
@@ -40,3 +40,4 @@ int main(){
 
   return 0;
 }
+
