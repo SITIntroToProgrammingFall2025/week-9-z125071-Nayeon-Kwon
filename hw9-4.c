@@ -16,7 +16,7 @@ int main(){
     y = x/16;
     z = x%16;
 
-    if(x<10){
+    if(y<10){
       printf("%d", y);
     }
     else if (y == 10) { printf("A"); }
@@ -40,6 +40,7 @@ int main(){
 
   return 0;
 }
+
 
 
 
