@@ -9,7 +9,7 @@ int main(){
     scanf("%d", &a[i]);
   }
 
-  printf("The hex code is#");
+  printf("The hex code is #");
 
   for(i=0; i<3; i++){
     x = a[i];
@@ -40,5 +40,6 @@ int main(){
 
   return 0;
 }
+
 
 
