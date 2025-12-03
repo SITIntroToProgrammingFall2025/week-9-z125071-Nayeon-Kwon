@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 int main(void) {
-    double a[2][3];
-    double b[3][2];
-    double c[2][2];
+    int a[2][3];
+    int b[3][2];
+    int c[2][2];
     int i, j, k;
 
     for(i=0; i<2; i++){
         for(j=0; j<3; j++){
-            scanf("%lf", &a[i][j]);
+            scanf("%d", &a[i][j]);
         }
     }
         
     for(i=0; i<3; i++){
         for(j=0; j<2; j++){
-            scanf("%lf", &b[i][j]);
+            scanf("%d", &b[i][j]);
         }
     }
     
@@ -23,7 +23,7 @@ int main(void) {
     printf("The first matrix you entered is\n");
         for(i=0;i<2;i++){
             for(j=0;j<3;j++){
-                printf("%.1lf ", a[i][j]);
+                printf("%d ", a[i][j]);
             }
             printf("\n");
         }
@@ -31,14 +31,14 @@ int main(void) {
     printf("The second matrix you entered is\n");
         for(i=0;i<3;i++){
             for(j=0;j<2;j++){
-                printf("%.1lf ", b[i][j]);
+                printf("%d ", b[i][j]);
             }
             printf("\n");
         }
 
     for(i=0;i<2;i++){
         for(j=0;j<2;j++){
-            c[i][j] = 0.0;
+            c[i][j] = 0;
             for(k=0; k<3; k++){
                 c[i][j] += a[i][k] * b[k][j];
             }
@@ -48,11 +48,10 @@ int main(void) {
     printf("The multiplication product of matrix A and matrix B:\n");
     for(i=0;i<2;i++){
         for(j=0;j<2;j++){
-            printf("%.1lf ", c[i][j]);
+            printf("%d ", c[i][j]);
         }
         printf("\n");
     }
 
     return 0;
 }
-
